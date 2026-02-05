@@ -1,0 +1,379 @@
+/**
+ * Services.module.css
+ * Стили страницы услуг с БЭМ-методологией
+ */
+
+.services {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.services__header {
+  margin-bottom: 48px;
+}
+
+.services__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 12px 0;
+}
+
+.services__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #718096;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* Основные услуги */
+.services__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.services__card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 64, 126, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 64, 126, 0.04);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.services__card:nth-child(even) {
+  direction: rtl;
+}
+
+.services__card:nth-child(even) > * {
+  direction: ltr;
+}
+
+.services__cardImage {
+  position: relative;
+  min-height: 320px;
+}
+
+.services__cardImage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services__cardContent {
+  padding: 36px 40px;
+}
+
+.services__cardIcon {
+  width: 52px;
+  height: 52px;
+  background: #ff342f;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(255, 52, 47, 0.2);
+}
+
+.services__cardTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 12px 0;
+}
+
+.services__cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #718096;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.services__cardFeatures {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.services__cardFeature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #2D3748;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 64, 126, 0.06);
+}
+
+.services__cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.services__cardPrice {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff342f;
+}
+
+.services__cardButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #ff342f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 52, 47, 0.2);
+  transition: box-shadow 0.2s ease;
+}
+
+.services__cardButton:hover {
+  box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
+}
+
+/* Дополнительные услуги */
+.services__additional {
+  margin-bottom: 60px;
+}
+
+.services__additionalTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 28px 0;
+  text-align: center;
+}
+
+.services__additionalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.services__additionalCard {
+  background: #f8f9fb;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  border: 1px solid rgba(0, 64, 126, 0.06);
+}
+
+.services__additionalIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 163, 213, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #00a3d5;
+}
+
+.services__additionalCardTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 8px 0;
+}
+
+.services__additionalCardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA блок */
+.services__cta {
+  background: linear-gradient(135deg, #00407e 0%, #003366 100%);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services__ctaTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+.services__ctaText {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  opacity: 0.85;
+  margin: 0 0 20px 0;
+}
+
+.services__ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #ff342f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(255, 52, 47, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .services__card {
+    grid-template-columns: 1fr;
+  }
+  
+  .services__card:nth-child(even) {
+    direction: ltr;
+  }
+  
+  .services__cardImage {
+    min-height: 200px;
+  }
+  
+  .services__additionalGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 0 16px;
+  }
+  
+  .services__header {
+    margin-bottom: 32px;
+  }
+  
+  .services__title {
+    font-size: 28px;
+  }
+  
+  .services__subtitle {
+    font-size: 15px;
+  }
+  
+  .services__card {
+    grid-template-columns: 1fr;
+  }
+  
+  .services__cardImage {
+    min-height: 180px;
+  }
+  
+  .services__cardContent {
+    padding: 24px;
+  }
+  
+  .services__cardIcon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+  
+  .services__cardTitle {
+    font-size: 20px;
+  }
+  
+  .services__cardDescription {
+    font-size: 14px;
+  }
+  
+  .services__cardPrice {
+    font-size: 20px;
+  }
+  
+  .services__cardFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .services__cardButton {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Убираем hover на мобильных */
+  .services__cardButton:hover {
+    box-shadow: 0 4px 12px rgba(255, 52, 47, 0.2);
+  }
+  
+  .services__additionalGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .services__additionalCard {
+    padding: 20px;
+  }
+  
+  .services__additionalTitle {
+    font-size: 22px;
+  }
+  
+  .services__cta {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+  
+  .services__ctaTitle {
+    font-size: 22px;
+  }
+  
+  .services__ctaButton {
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services__title {
+    font-size: 24px;
+  }
+  
+  .services__cardImage {
+    min-height: 150px;
+  }
+  
+  .services__cardContent {
+    padding: 20px;
+  }
+  
+  .services__cardTitle {
+    font-size: 18px;
+  }
+}

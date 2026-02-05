@@ -1,0 +1,414 @@
+/**
+ * Contacts.module.css
+ * Стили страницы контактов с БЭМ-методологией
+ */
+
+.contacts {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+.contacts__header {
+  margin-bottom: 48px;
+}
+
+.contacts__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2D3748;
+  margin: 0 0 16px 0;
+}
+
+.contacts__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0;
+}
+
+/* Основной контент */
+.contacts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+/* Форма обратной связи */
+.contacts__form {
+  background: #ffffff;
+  border: 1px solid rgba(0, 51, 102, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  order: 2;
+}
+
+.contacts__formTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2D3748;
+  margin: 0 0 8px 0;
+}
+
+.contacts__formSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #718096;
+  margin: 0 0 32px 0;
+}
+
+.contacts__formGroup {
+  margin-bottom: 20px;
+}
+
+.contacts__formLabel {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2D3748;
+  margin-bottom: 8px;
+}
+
+.contacts__formInput,
+.contacts__formTextarea {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgba(0, 51, 102, 0.1);
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #2D3748;
+  background: #F8F9FA;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.contacts__formInput:focus,
+.contacts__formTextarea:focus {
+  border-color: #00a3d5;
+  background: #ffffff;
+}
+
+.contacts__formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contacts__formButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px 32px;
+  background: #f8604a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(248, 96, 74, 0.3);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+  margin-top: 8px;
+}
+
+.contacts__formButton:hover {
+  background: #e5503d;
+  box-shadow: 0 8px 28px rgba(248, 96, 74, 0.4);
+}
+
+/* Контактная информация */
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  order: 1;
+}
+
+.contacts__infoCard {
+  background: #ffffff;
+  border: 1px solid rgba(0, 51, 102, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contacts__infoIcon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #f8604a 0%, #e5503d 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(248, 96, 74, 0.25);
+}
+
+/* Email — цвета Яндекс.Почты (оранжево-желтый) */
+.contacts__infoIconEmail {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #FFCC00 0%, #FF9500 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(255, 149, 0, 0.25);
+}
+
+/* Адрес — цвета Яндекс.Карт (зелёный) */
+.contacts__infoIconAddress {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.25);
+}
+
+/* Режим работы — стилистика сайта (синий) */
+.contacts__infoIconSchedule {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #00a3d5 0%, #0077b3 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 163, 213, 0.25);
+}
+
+.contacts__infoIconSecondary {
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 51, 102, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #003366;
+}
+
+.contacts__socialLink {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #0077FF 0%, #0055CC 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 119, 255, 0.25);
+  transition: box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.contacts__socialLink:hover {
+  box-shadow: 0 8px 24px rgba(0, 119, 255, 0.35);
+}
+
+.contacts__infoContent {
+  flex: 1;
+}
+
+.contacts__infoTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2D3748;
+  margin: 0 0 8px 0;
+}
+
+.contacts__infoLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #003366;
+  text-decoration: none;
+  display: block;
+}
+
+.contacts__infoLinkSecondary {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #003366;
+  text-decoration: none;
+  display: block;
+}
+
+.contacts__infoText {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2D3748;
+  margin: 0;
+}
+
+.contacts__infoNote {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #718096;
+  margin: 8px 0 0 0;
+}
+
+.contacts__workHours {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__workHours li {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #2D3748;
+  margin-bottom: 6px;
+}
+
+.contacts__workHoursOff {
+  color: #718096 !important;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .contacts__form {
+    order: 1;
+  }
+  
+  .contacts__info {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 0 16px 48px;
+  }
+  
+  .contacts__header {
+    margin-bottom: 32px;
+  }
+  
+  .contacts__title {
+    font-size: 28px;
+  }
+  
+  .contacts__subtitle {
+    font-size: 15px;
+  }
+  
+  .contacts__form {
+    padding: 24px;
+    border-radius: 16px;
+  }
+  
+  .contacts__formTitle {
+    font-size: 20px;
+  }
+  
+  .contacts__formInput,
+  .contacts__formTextarea {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+  
+  .contacts__formButton {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  
+  /* Убираем hover на мобильных */
+  .contacts__formButton:hover {
+    box-shadow: 0 6px 20px rgba(248, 96, 74, 0.3);
+    background: #f8604a;
+  }
+  
+  .contacts__infoIconEmail,
+  .contacts__infoIconAddress,
+  .contacts__infoIconSchedule {
+    width: 44px;
+    height: 44px;
+  }
+  
+  /* Контактная информация в 2 колонки */
+  .contacts__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .contacts__infoCard {
+    padding: 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contacts__infoIcon,
+  .contacts__infoIconSecondary {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .contacts__infoTitle {
+    font-size: 14px;
+  }
+  
+  .contacts__infoLink {
+    font-size: 16px;
+  }
+  
+  .contacts__infoLinkSecondary,
+  .contacts__infoText {
+    font-size: 14px;
+  }
+  
+  .contacts__infoNote {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .contacts__workHours li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts__title {
+    font-size: 24px;
+  }
+  
+  .contacts__info {
+    grid-template-columns: 1fr;
+  }
+  
+  .contacts__infoCard {
+    flex-direction: row;
+    align-items: center;
+  }
+}

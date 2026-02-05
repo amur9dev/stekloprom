@@ -1,0 +1,26 @@
+/**
+ * Layout.module.css
+ * Стили основного макета с БЭМ-методологией
+ */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout__main {
+  flex: 1;
+  padding-top: 0;
+}
+
+/* Страницы с шапкой без hero */
+.layout__main--withPadding {
+  padding-top: 140px;
+}
+
+@media (max-width: 768px) {
+  .layout__main--withPadding {
+    padding-top: 70px;
+  }
+}

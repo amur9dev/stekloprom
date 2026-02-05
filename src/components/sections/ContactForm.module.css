@@ -1,0 +1,248 @@
+/**
+ * ContactForm.module.css
+ * Стили формы обратной связи с БЭМ-методологией
+ */
+
+.contactform {
+  padding: 80px 0;
+  background: #00a3d5;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactform::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.contactform::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.contactform__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.contactform__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* Левая часть — текст */
+.contactform__content {
+  color: #ffffff;
+}
+
+.contactform__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.contactform__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+.contactform__benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contactform__benefit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.contactform__benefit:last-child {
+  margin-bottom: 0;
+}
+
+.contactform__benefitIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactform__benefitText {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Правая часть — форма */
+.contactform__form {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.contactform__formTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.contactform__formSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #718096;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.contactform__formGroup {
+  margin-bottom: 20px;
+}
+
+.contactform__formLabel {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #00407e;
+  margin-bottom: 8px;
+}
+
+.contactform__formInput {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgba(0, 64, 126, 0.1);
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #00407e;
+  transition: all 0.2s ease;
+  background: #F8F9FA;
+}
+
+.contactform__formInput:focus {
+  outline: none;
+  border-color: #00a3d5;
+  background: #fefefe;
+  box-shadow: 0 0 0 4px rgba(0, 163, 213, 0.1);
+}
+
+.contactform__formInput::placeholder {
+  color: #A0AEC0;
+}
+
+.contactform__formButton {
+  width: 100%;
+  padding: 18px 32px;
+  background: #ff342f;
+  color: #fefefe;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
+  margin-top: 8px;
+}
+
+.contactform__formButton:hover {
+  background: #e02e29;
+  box-shadow: 0 8px 28px rgba(255, 52, 47, 0.45);
+}
+
+.contactform__formNote {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #718096;
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+.contactform__formNoteLink {
+  color: #00a3d5;
+  text-decoration: none;
+}
+
+.contactform__formNoteLink:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .contactform__wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .contactform__content {
+    text-align: center;
+  }
+  
+  .contactform__benefits {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactform {
+    padding: 80px 0;
+  }
+  
+  .contactform__container {
+    padding: 0 16px;
+  }
+  
+  .contactform__title {
+    font-size: 32px;
+  }
+  
+  .contactform__form {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactform__title {
+    font-size: 28px;
+  }
+  
+  .contactform__form {
+    padding: 24px 20px;
+  }
+}

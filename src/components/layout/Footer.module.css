@@ -1,0 +1,305 @@
+/**
+ * Footer.module.css
+ * Стили подвала сайта с БЭМ-методологией
+ * 
+ * Блок: footer
+ * Элементы: container, logo, nav, contacts, etc.
+ */
+
+.footer {
+  background: #00407e;
+  color: #fefefe;
+}
+
+.footer__main {
+  padding: 56px 0 40px;
+}
+
+.footer__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  gap: 48px;
+}
+
+/* Колонка с логотипом и контактами */
+.footer__brand {
+  padding-right: 20px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.footer__logoImage {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer__logoText {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fefefe;
+  letter-spacing: 1px;
+}
+
+.footer__description {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.footer__contacts {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.footer__contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 6px 0;
+}
+
+.footer__contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.footer__contactIcon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer__contactLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.footer__contactLink:hover {
+  color: #E53935;
+}
+
+.footer__contactText {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Социальные сети */
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socialLink {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer__socialLink:hover {
+  background: #0077FF;
+  color: #fefefe;
+}
+
+/* Колонки навигации */
+.footer__nav {
+  padding-top: 4px;
+}
+
+.footer__navTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fefefe;
+  margin: 0 0 16px 0;
+}
+
+.footer__navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__navItem {
+  margin-bottom: 10px;
+}
+
+.footer__navItem:last-child {
+  margin-bottom: 0;
+}
+
+.footer__navLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.footer__navLink:hover {
+  color: #ff342f;
+}
+
+/* Нижняя полоса */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+}
+
+.footer__bottomContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__legalLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__legalLink:hover {
+  color: #ff342f;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .footer__brand {
+    grid-column: 1 / -1;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__main {
+    padding: 48px 0 32px;
+  }
+  
+  .footer__container {
+    padding: 0 16px;
+  }
+  
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  
+  .footer__logoImage {
+    height: 50px;
+  }
+  
+  .footer__logoText {
+    font-size: 18px;
+  }
+  
+  .footer__description {
+    font-size: 13px;
+  }
+  
+  .footer__navTitle {
+    font-size: 14px;
+  }
+  
+  .footer__bottomContainer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 0 16px;
+  }
+  
+  .footer__legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* Убираем hover на мобильных */
+  .footer__contactLink:hover,
+  .footer__navLink:hover,
+  .footer__legalLink:hover {
+    color: inherit;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__main {
+    padding: 40px 0 28px;
+  }
+  
+  .footer__logoImage {
+    height: 44px;
+  }
+  
+  .footer__logoText {
+    font-size: 16px;
+  }
+  
+  .footer__contactIcon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .footer__contactLink,
+  .footer__contactText {
+    font-size: 13px;
+  }
+}

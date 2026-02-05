@@ -1,0 +1,263 @@
+/**
+ * Cases.module.css
+ * Стили страницы наших работ с БЭМ-методологией
+ */
+
+.cases {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cases__header {
+  margin-bottom: 48px;
+}
+
+.cases__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2D3748;
+  margin: 0 0 16px 0;
+}
+
+.cases__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0;
+}
+
+/* Галерея */
+.cases__gallery {
+  margin-bottom: 80px;
+}
+
+.cases__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Карточка проекта */
+.cases__card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 51, 102, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.cases__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 51, 102, 0.12);
+}
+
+.cases__cardImage {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.cases__cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cases__card:hover .cases__cardImage img {
+  transform: scale(1.05);
+}
+
+.cases__cardBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: linear-gradient(135deg, #E30613 0%, #C00000 100%);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.cases__cardContent {
+  padding: 24px;
+}
+
+.cases__cardTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D3748;
+  margin: 0 0 12px 0;
+}
+
+.cases__cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.cases__cardMeta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 51, 102, 0.06);
+}
+
+.cases__cardMetaItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #718096;
+}
+
+/* Мобильный слайдер */
+.cases__sliderSection {
+  margin-bottom: 48px;
+}
+
+.cases__slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 0;
+}
+
+.cases__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.cases__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid rgba(0, 51, 102, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 8px;
+}
+
+.cases__slide:first-child {
+  margin-left: 0;
+}
+
+.cases__slide:last-child {
+  margin-right: 0;
+}
+
+.cases__slideImage {
+  position: relative;
+  aspect-ratio: 16/10;
+}
+
+.cases__slideImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cases__slideContent {
+  padding: 20px;
+}
+
+.cases__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cases__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 64, 126, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.cases__dot--active {
+  background: #ff342f;
+  transform: scale(1.2);
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .cases__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cases {
+    padding: 0 16px;
+  }
+  
+  .cases__header {
+    margin-bottom: 32px;
+  }
+  
+  .cases__title {
+    font-size: 28px;
+  }
+  
+  .cases__subtitle {
+    font-size: 15px;
+  }
+  
+  .cases__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  /* Убираем hover на мобильных */
+  .cases__card:hover {
+    box-shadow: none;
+  }
+  
+  .cases__card:hover .cases__cardImage img {
+    transform: none;
+  }
+  
+  .cases__cardContent {
+    padding: 16px;
+  }
+  
+  .cases__cardTitle {
+    font-size: 16px;
+  }
+  
+  .cases__cardDescription {
+    font-size: 13px;
+  }
+  
+  .cases__cardMeta {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .cases__cardMetaItem {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cases__title {
+    font-size: 24px;
+  }
+}

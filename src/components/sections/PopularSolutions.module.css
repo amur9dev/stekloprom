@@ -1,0 +1,328 @@
+/**
+ * PopularSolutions.module.css
+ * Стили секции популярных решений с БЭМ-методологией
+ * 
+ * Блок: solutions
+ * Элементы: container, header, title, grid, card, etc.
+ */
+
+.solutions {
+  padding: 60px 0;
+  background: #f8f9fb;
+}
+
+.solutions__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Заголовок секции */
+.solutions__header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.solutions__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.solutions__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Сетка карточек — равная ширина */
+.solutions__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Карточка продукта - одинаковая ширина и высота */
+.solutions__card {
+  position: relative;
+  background: #fefefe;
+  border: 1px solid rgba(0, 64, 126, 0.06);
+  border-radius: 14px;
+  padding: 22px;
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  min-height: 100%;
+  width: 100%;
+  min-width: 0;
+}
+
+
+.solutions__card:hover {
+  box-shadow: 0 6px 20px rgba(0, 64, 126, 0.08);
+}
+
+.solutions__card--popular {
+  border: 2px solid #ff342f;
+}
+
+/* Бейдж популярного */
+.solutions__cardBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff342f;
+  color: #fefefe;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
+}
+
+/* Изображение продукта */
+.solutions__cardImageWrapper {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e2e8f0 100%);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solutions__cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Заголовок карточки */
+.solutions__cardTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  padding-right: 60px;
+}
+
+.solutions__card--popular .solutions__cardTitle {
+  padding-right: 80px;
+}
+
+/* Описание */
+.solutions__cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+/* Характеристики */
+.solutions__cardFeatures {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.solutions__cardFeature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #00407e;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 64, 126, 0.06);
+}
+
+.solutions__cardFeature:last-child {
+  border-bottom: none;
+}
+
+.solutions__cardFeatureDot {
+  width: 6px;
+  height: 6px;
+  background: #00a3d5;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Цена */
+.solutions__cardPrice {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff342f;
+  margin-bottom: 20px;
+}
+
+.solutions__cardPriceLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: #718096;
+}
+
+/* Кнопка */
+.solutions__cardButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 24px;
+  background: transparent;
+  border: 2px solid rgba(0, 64, 126, 0.15);
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #00a3d5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.solutions__cardButton:hover {
+  background: #00a3d5;
+  border-color: #00a3d5;
+  color: #fefefe;
+}
+
+.solutions__card--popular .solutions__cardButton {
+  background: #ff342f;
+  border-color: transparent;
+  color: #fefefe;
+  box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
+}
+
+.solutions__card--popular .solutions__cardButton:hover {
+  box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
+}
+
+/* Кнопка "Весь каталог" */
+.solutions__footer {
+  text-align: center;
+}
+
+.solutions__allButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: #00a3d5;
+  color: #fefefe;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 163, 213, 0.2);
+}
+
+.solutions__allButton:hover {
+  box-shadow: 0 6px 20px rgba(0, 163, 213, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .solutions__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions {
+    padding: 60px 0;
+  }
+  
+  .solutions__container {
+    padding: 0 16px;
+  }
+  
+  .solutions__title {
+    font-size: 28px;
+  }
+  
+  .solutions__subtitle {
+    font-size: 15px;
+  }
+  
+  .solutions__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .solutions__card {
+    padding: 20px;
+  }
+  
+  /* Убираем hover на мобильных */
+  .solutions__card:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+  
+  .solutions__cardButton:hover {
+    background: transparent;
+    border-color: rgba(0, 64, 126, 0.15);
+    color: #00a3d5;
+  }
+  
+  .solutions__card--popular .solutions__cardButton:hover {
+    background: #ff342f;
+    box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions__title {
+    font-size: 24px;
+  }
+  
+  .solutions__allButton {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .solutions__card {
+    padding: 16px;
+  }
+  
+  .solutions__cardTitle {
+    font-size: 18px;
+    padding-right: 0;
+  }
+  
+  .solutions__card--popular .solutions__cardTitle {
+    padding-right: 70px;
+  }
+  
+  .solutions__cardBadge {
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,182 @@
+/**
+ * CallToAction.module.css
+ * Стили секции призыва к действию с БЭМ-методологией
+ * 
+ * Блок: cta
+ * Элементы: container, content, title, actions, etc.
+ */
+
+.cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #003366 0%, #001a33 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Декоративные элементы */
+.cta::before,
+.cta::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(227, 6, 19, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta::before {
+  top: -200px;
+  right: -100px;
+}
+
+.cta::after {
+  bottom: -200px;
+  left: -100px;
+}
+
+.cta__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.cta__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+.cta__actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 36px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+
+.cta__button--primary {
+  background: linear-gradient(135deg, #E30613 0%, #C00000 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(227, 6, 19, 0.35);
+}
+
+.cta__button--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(227, 6, 19, 0.45);
+}
+
+.cta__button--secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.cta__button--secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Дополнительная информация */
+.cta__info {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.cta__infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.cta__infoIcon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 0;
+  }
+  
+  .cta__container {
+    padding: 0 16px;
+  }
+  
+  .cta__title {
+    font-size: 32px;
+  }
+  
+  .cta__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .cta__actions {
+    flex-direction: column;
+  }
+  
+  .cta__button {
+    width: 100%;
+  }
+  
+  .cta__info {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta__title {
+    font-size: 28px;
+  }
+}

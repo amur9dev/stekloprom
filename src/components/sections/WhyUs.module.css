@@ -1,0 +1,199 @@
+/**
+ * WhyUs.module.css
+ * Стили секции преимуществ с БЭМ-методологией
+ * 
+ * Блок: whyus
+ * Элементы: container, header, grid, card, stats, etc.
+ */
+
+.whyus {
+  padding: 60px 0;
+  background: #fefefe;
+}
+
+.whyus__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Заголовок секции */
+.whyus__header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.whyus__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.whyus__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Сетка преимуществ */
+.whyus__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+/* Карточка преимущества */
+.whyus__card {
+  background: #fefefe;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  transition: box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 64, 126, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.whyus__card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.whyus__cardIcon {
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 163, 213, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a3d5;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.whyus__cardContent {
+  flex: 1;
+}
+
+.whyus__cardTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 8px 0;
+}
+
+.whyus__cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Статистика */
+.whyus__stats {
+  background: #00a3d5;
+  border-radius: 24px;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.whyus__stat {
+  text-align: center;
+  color: #fefefe;
+}
+
+.whyus__statValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #fefefe;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.whyus__statLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .whyus__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .whyus__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .whyus {
+    padding: 60px 0;
+  }
+  
+  .whyus__container {
+    padding: 0 16px;
+  }
+  
+  .whyus__title {
+    font-size: 28px;
+  }
+  
+  .whyus__subtitle {
+    font-size: 15px;
+  }
+  
+  .whyus__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .whyus__card {
+    padding: 20px;
+  }
+  
+  /* Убираем hover на мобильных */
+  .whyus__card:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Скрываем блок статистики на мобильных */
+  .whyus__stats {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyus__title {
+    font-size: 24px;
+  }
+  
+  .whyus__cardIcon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .whyus__cardTitle {
+    font-size: 16px;
+  }
+  
+  .whyus__cardDescription {
+    font-size: 13px;
+  }
+}

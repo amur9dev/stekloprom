@@ -1,0 +1,36 @@
+# Robots.txt для сайта «Стеклопром» — производство стеклопакетов в Ростове-на-Дону
+# https://stekloprom-rostov.ru
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Crawl-delay: 5
+
+# Запрещённые разделы
+Disallow: /404
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Карта сайта
+Sitemap: https://stekloprom-rostov.ru/sitemap.xml
+
+# Хост
+Host: https://stekloprom-rostov.ru
