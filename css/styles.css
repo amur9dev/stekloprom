@@ -56,52 +56,51 @@ ul {
   padding-top: 0;
 }
 
-.icon {
+.icon-placeholder {
   width: 24px;
   height: 24px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  display: inline-block;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.6);
   flex-shrink: 0;
 }
 
-.icon--xs {
+.icon-placeholder--xs {
   width: 14px;
   height: 14px;
+  border-radius: 4px;
 }
 
-.icon--sm {
+.icon-placeholder--sm {
   width: 18px;
   height: 18px;
+  border-radius: 5px;
 }
 
-.icon--md {
+.icon-placeholder--md {
   width: 22px;
   height: 22px;
+  border-radius: 6px;
 }
 
-.icon--lg {
+.icon-placeholder--lg {
   width: 28px;
   height: 28px;
+  border-radius: 8px;
 }
 
-.icon--white {
-  stroke: #ffffff;
+.icon-placeholder--white {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
-.icon--fill {
-  fill: currentColor;
-  stroke: none;
-}
-
-.icon--inline {
+.icon-placeholder--inline {
   margin-right: 6px;
   vertical-align: middle;
 }
 
-.icon--spin {
+.icon-placeholder--spin {
   animation: spin 1s linear infinite;
 }
 

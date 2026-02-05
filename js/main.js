@@ -222,7 +222,7 @@ const setupFooterYear = () => {
 const showLoading = (button, text) => {
   button.dataset.originalContent = button.innerHTML;
   button.innerHTML = `
-    <svg class="icon icon--sm icon--white icon--spin"><use href="#icon-loader-2"></use></svg>
+    <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white icon-placeholder--spin"></span>
     <span>${text}</span>
   `;
   button.setAttribute('disabled', 'true');
