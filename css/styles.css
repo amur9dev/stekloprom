@@ -2355,9 +2355,292 @@ ul {
   box-shadow: 0 6px 16px rgba(0, 163, 213, 0.25);
 }
 
+/* Catalog detail */
+.catalogDetail {
+  padding: 48px 0 80px;
+}
+
+.catalogDetail__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.catalogDetail__image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #F8F9FA 0%, #E2E8F0 100%);
+}
+
+.catalogDetail__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogDetail__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 16px 0;
+}
+
+.catalogDetail__description {
+  font-size: 16px;
+  color: #718096;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+}
+
+.catalogDetail__price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff342f;
+  margin-bottom: 24px;
+}
+
+.catalogDetail__priceLabel {
+  font-size: 16px;
+  font-weight: 400;
+  color: #718096;
+}
+
+.catalogDetail__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 40px;
+  background: #ff342f;
+  color: #fefefe;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
+  align-self: flex-start;
+}
+
+.catalogDetail__button:hover {
+  box-shadow: 0 10px 30px rgba(255, 52, 47, 0.45);
+}
+
+.catalogDetail__advantages {
+  margin-bottom: 64px;
+}
+
+.catalogDetail__sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00407e;
+  margin: 0 0 32px 0;
+}
+
+.catalogDetail__advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.catalogDetail__advantage {
+  background: #F8F9FA;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+
+.catalogDetail__advantageIcon {
+  width: 56px;
+  height: 56px;
+  background: #00a3d5;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #fefefe;
+  box-shadow: 0 6px 16px rgba(0, 163, 213, 0.25);
+}
+
+.catalogDetail__advantageTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 8px 0;
+}
+
+.catalogDetail__advantageText {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+.catalogDetail__specs {
+  margin-bottom: 64px;
+}
+
+.catalogDetail__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 51, 102, 0.08);
+}
+
+.catalogDetail__tableRow {
+  border-bottom: 1px solid rgba(0, 64, 126, 0.06);
+}
+
+.catalogDetail__tableRow:last-child {
+  border-bottom: none;
+}
+
+.catalogDetail__tableCell {
+  padding: 20px 24px;
+  font-size: 15px;
+  color: #00407e;
+}
+
+.catalogDetail__tableCell:first-child {
+  font-weight: 600;
+  background: #F8F9FA;
+  width: 40%;
+}
+
+.catalogDetail__forWhom {
+  margin-bottom: 64px;
+}
+
+.catalogDetail__forWhomGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.catalogDetail__forWhomCard {
+  background: #fefefe;
+  border: 1px solid rgba(0, 64, 126, 0.08);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.catalogDetail__forWhomCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.catalogDetail__forWhomIcon {
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 163, 213, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #00a3d5;
+}
+
+.catalogDetail__forWhomTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 8px 0;
+}
+
+.catalogDetail__forWhomText {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+.catalogDetail__prices {
+  background: #F8F9FA;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 64px;
+}
+
+.catalogDetail__pricesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.catalogDetail__priceCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.catalogDetail__priceCard--popular {
+  border-color: #ff342f;
+  position: relative;
+}
+
+.catalogDetail__priceCard--popular::before {
+  content: 'Популярный';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff342f;
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.catalogDetail__priceCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00407e;
+  margin: 0 0 8px 0;
+}
+
+.catalogDetail__priceCardFormula {
+  font-size: 14px;
+  color: #718096;
+  margin: 0 0 20px 0;
+}
+
+.catalogDetail__priceCardValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff342f;
+}
+
+.catalogDetail__priceCardUnit {
+  font-size: 14px;
+  font-weight: 400;
+  color: #718096;
+}
+
 @media (max-width: 1200px) {
   .catalog__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .catalogDetail__advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .catalogDetail__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
@@ -2409,6 +2692,65 @@ ul {
     padding: 10px 16px;
     font-size: 13px;
   }
+
+  .catalogDetail {
+    padding: 24px 0 48px;
+  }
+
+  .catalogDetail__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .catalogDetail__title {
+    font-size: 24px;
+  }
+
+  .catalogDetail__description {
+    font-size: 14px;
+  }
+
+  .catalogDetail__price {
+    font-size: 26px;
+  }
+
+  .catalogDetail__button {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .catalogDetail__sectionTitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .catalogDetail__advantagesGrid,
+  .catalogDetail__forWhomGrid,
+  .catalogDetail__pricesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .catalogDetail__advantage,
+  .catalogDetail__forWhomCard {
+    padding: 20px;
+  }
+
+  .catalogDetail__prices {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .catalogDetail__priceCard {
+    padding: 20px;
+  }
+
+  .catalogDetail__tableCell {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2453,6 +2795,10 @@ ul {
 
   .catalog__cardButton:hover {
     box-shadow: none;
+  }
+
+  .catalogDetail__title {
+    font-size: 22px;
   }
 }
 
