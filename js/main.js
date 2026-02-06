@@ -340,6 +340,36 @@ const setupCallbackForm = () => {
   });
 };
 
+const setupCasesSlider = () => {
+  const slider = document.querySelector('[data-cases-slider]');
+  const dots = Array.from(document.querySelectorAll('[data-cases-dot]'));
+
+  if (!slider || dots.length === 0) return;
+
+  const setActiveDot = (index) => {
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('cases__dot--active', idx === index);
+    });
+  };
+
+  const handleScroll = () => {
+    const slideWidth = slider.offsetWidth;
+    if (!slideWidth) return;
+    const newIndex = Math.round(slider.scrollLeft / slideWidth);
+    setActiveDot(newIndex);
+  };
+
+  slider.addEventListener('scroll', handleScroll);
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      const slideWidth = slider.offsetWidth;
+      slider.scrollTo({ left: index * slideWidth, behavior: 'smooth' });
+      setActiveDot(index);
+    });
+  });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   setupHeader();
   setupMobileMenu();
@@ -348,5 +378,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupPhoneInputs();
   setupContactForm();
   setupCallbackForm();
+  setupCasesSlider();
   setupFooterYear();
 });

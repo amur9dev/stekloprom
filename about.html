@@ -375,15 +375,15 @@
                   <p class="contactform__formSubtitle">Заполните форму и мы перезвоним вам</p>
 
                   <div class="contactform__formGroup">
-                    <label for="about-name" class="contactform__formLabel">Ваше имя</label>
-                    <input type="text" id="about-name" name="name" placeholder="Иван Иванов" class="contactform__formInput" required />
-                    <p class="contactform__formError" data-error="about-name"></p>
+                    <label for="contact-name" class="contactform__formLabel">Ваше имя</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Иван Иванов" class="contactform__formInput" required />
+                    <p class="contactform__formError" data-error="contact-name"></p>
                   </div>
 
                   <div class="contactform__formGroup">
-                    <label for="about-phone" class="contactform__formLabel">Телефон *</label>
-                    <input type="tel" id="about-phone" name="phone" placeholder="+7 (___) ___-__-__" class="contactform__formInput" data-phone-input required />
-                    <p class="contactform__formError" data-error="about-phone"></p>
+                    <label for="contact-phone" class="contactform__formLabel">Телефон *</label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="+7 (___) ___-__-__" class="contactform__formInput" data-phone-input required />
+                    <p class="contactform__formError" data-error="contact-phone"></p>
                   </div>
 
                   <button type="submit" class="contactform__formButton" data-contact-submit>
@@ -494,30 +494,62 @@
       <div class="modal__overlay" data-modal-close></div>
       <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="callback-title">
         <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
-          <span class="modal__closeLine"></span>
-          <span class="modal__closeLine"></span>
+          <span class="icon-placeholder icon-placeholder--sm"></span>
         </button>
         <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
         <p class="modal__subtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
 
-        <form class="modal__form" data-modal-form>
-          <label class="modal__label" for="modal-name">Ваше имя</label>
-          <input type="text" id="modal-name" name="name" class="modal__input" placeholder="Иван Иванов" required />
+        <div class="callback" data-callback>
+          <div class="callback__success" data-callback-success>
+            <div class="callback__successIcon">
+              <span class="icon-placeholder icon-placeholder--lg"></span>
+            </div>
+            <h3 class="callback__successTitle">Заявка отправлена!</h3>
+            <p class="callback__successText">Мы перезвоним вам в течение 15 минут</p>
+          </div>
 
-          <label class="modal__label" for="modal-phone">Телефон *</label>
-          <input type="tel" id="modal-phone" name="phone" class="modal__input" placeholder="+7 (___) ___-__-__" data-phone-input required />
+          <form class="callback__form" data-callback-form>
+            <div class="callback__field">
+              <label for="callback-name" class="callback__label">Ваше имя *</label>
+              <input type="text" id="callback-name" name="name" placeholder="Иван" class="callback__input" required />
+              <p class="callback__error" data-error="callback-name"></p>
+            </div>
 
-          <label class="modal__label" for="modal-comment">Комментарий</label>
-          <textarea id="modal-comment" name="comment" class="modal__textarea" placeholder="Например, нужна доставка"></textarea>
+            <div class="callback__field">
+              <label for="callback-phone" class="callback__label">Телефон *</label>
+              <input type="tel" id="callback-phone" name="phone" placeholder="+7 (___) ___-__-__" class="callback__input" data-phone-input required />
+              <p class="callback__error" data-error="callback-phone"></p>
+            </div>
 
-          <button type="submit" class="modal__submit">Отправить заявку</button>
-          <p class="modal__note">
-            Нажимая кнопку «Отправить заявку», вы соглашаетесь с
-            <a href="privacy.html" class="modal__noteLink">политикой конфиденциальности</a>
-          </p>
-        </form>
+            <div class="callback__field callback__field--checkbox">
+              <label class="callback__checkboxLabel">
+                <input type="checkbox" name="agreement" class="callback__checkbox" />
+                <span>
+                  Согласен на обработку
+                  <a href="privacy.html" class="callback__link">персональных данных</a>
+                </span>
+              </label>
+              <p class="callback__error" data-error="callback-agreement"></p>
+            </div>
+
+            <button class="callback__button" type="submit" data-callback-submit>
+              <span>Заказать звонок</span>
+              <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+            </button>
+
+            <p class="callback__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          </form>
+        </div>
       </div>
     </div>
+
+    <a href="tel:+78631234567" class="floating-call" aria-label="Позвонить">
+      <span class="icon-placeholder icon-placeholder--lg icon-placeholder--white"></span>
+    </a>
+
+    <button class="scroll-top" type="button" aria-label="Вернуться наверх" data-scroll-top>
+      <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+    </button>
 
     <script src="js/main.js"></script>
   </body>
