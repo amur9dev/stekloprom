@@ -200,18 +200,6 @@ const setupScrollTop = () => {
   });
 };
 
-const setupPreloader = () => {
-  const preloader = document.querySelector('[data-preloader]');
-  if (!preloader) return;
-
-  setTimeout(() => {
-    preloader.classList.add('preloader--fading');
-    setTimeout(() => {
-      preloader.remove();
-    }, 400);
-  }, 1500);
-};
-
 const setupFooterYear = () => {
   const yearElement = document.querySelector('[data-current-year]');
   if (yearElement) {
@@ -353,7 +341,6 @@ const setupCallbackForm = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  setupPreloader();
   setupHeader();
   setupMobileMenu();
   setupModal();
