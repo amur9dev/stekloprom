@@ -4322,6 +4322,9 @@ ul {
   border-radius: 16px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  aspect-ratio: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .cases-page .cases__card:hover {
