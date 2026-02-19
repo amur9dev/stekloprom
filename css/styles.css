@@ -57,12 +57,12 @@ ul {
 }
 
 .layout__main--withPadding {
-  padding-top: 140px;
+  padding-top: calc(var(--header-offset, 140px) + 12px);
 }
 
 @media (max-width: 768px) {
   .layout__main--withPadding {
-    padding-top: 70px;
+    padding-top: calc(var(--header-offset, 70px) + 8px);
   }
 }
 

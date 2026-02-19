@@ -98,13 +98,21 @@ const setupHeader = () => {
   const header = document.querySelector('[data-header]');
   const dropdownItems = document.querySelectorAll('[data-dropdown]');
 
+  const syncHeaderOffset = () => {
+    if (!header) return;
+    const height = header.offsetHeight || 0;
+    document.documentElement.style.setProperty('--header-offset', `${height}px`);
+  };
+
   const updateHeader = () => {
     if (!header) return;
     header.classList.toggle('header--scrolled', window.scrollY > 50);
+    syncHeaderOffset();
   };
 
   updateHeader();
   window.addEventListener('scroll', updateHeader);
+  window.addEventListener('resize', syncHeaderOffset);
 
   dropdownItems.forEach((item) => {
     const dropdown = item.querySelector('.header__dropdown');
