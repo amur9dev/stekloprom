@@ -2131,7 +2131,7 @@ ul {
 .floating-call {
   position: fixed;
   bottom: 24px;
-  left: 24px;
+  right: 24px;
   width: 64px;
   height: 64px;
   background: linear-gradient(135deg, #ff5a56 0%, #ff342f 100%);
@@ -3374,7 +3374,7 @@ ul {
 
   .floating-call {
     bottom: 16px;
-    left: 16px;
+    right: 16px;
   }
 }
 
@@ -5160,5 +5160,105 @@ ul {
     border-radius: 10px;
     font-size: 16px;
     margin-top: 2px;
+  }
+}
+
+/* === Global layout consistency (all key pages) === */
+.header__topBarContainer,
+.header__container,
+.footer__container,
+.footer__bottomContainer,
+.catalog__container,
+.services,
+.about__container,
+.cases-page,
+.blog__container,
+.contacts-page__container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.catalog__container,
+.services,
+.about__container,
+.cases-page,
+.blog__container,
+.contacts-page__container,
+.header__topBarContainer,
+.header__container,
+.footer__container,
+.footer__bottomContainer {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.blog__header {
+  text-align: left;
+}
+
+.catalog__title,
+.services__title,
+.about__title,
+.cases-page .cases__title,
+.blog__title,
+.contacts-page__title {
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.15;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 14px;
+}
+
+.catalog__description,
+.services__subtitle,
+.about__subtitle,
+.cases-page .cases__subtitle,
+.blog__subtitle,
+.contacts-page__subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #6b7280;
+  max-width: none;
+  margin: 0;
+  text-align: justify;
+  text-align-last: left;
+}
+
+@media (max-width: 767px) {
+  .catalog__container,
+  .services,
+  .about__container,
+  .cases-page,
+  .blog__container,
+  .contacts-page__container,
+  .header__topBarContainer,
+  .header__container,
+  .footer__container,
+  .footer__bottomContainer {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .catalog__title,
+  .services__title,
+  .about__title,
+  .cases-page .cases__title,
+  .blog__title,
+  .contacts-page__title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .catalog__description,
+  .services__subtitle,
+  .about__subtitle,
+  .cases-page .cases__subtitle,
+  .blog__subtitle,
+  .contacts-page__subtitle {
+    font-size: 14px;
+    line-height: 1.55;
   }
 }
