@@ -4787,7 +4787,7 @@ ul {
 
 /* === Contacts page (design-system aligned) === */
 .contacts-page-main {
-  padding-top: 28px;
+  padding-top: 0;
   padding-bottom: 64px;
 }
 
@@ -4982,7 +4982,7 @@ ul {
 
 @media (max-width: 1024px) {
   .contacts-page-main {
-    padding-top: 14px;
+    padding-top: 0;
     padding-bottom: 44px;
   }
 
@@ -5054,7 +5054,7 @@ ul {
 
 @media (max-width: 767px) {
   .contacts-page-main {
-    padding-top: 8px;
+    padding-top: 0;
     padding-bottom: 24px;
   }
 
@@ -5164,8 +5164,6 @@ ul {
 }
 
 /* === Global layout consistency (all key pages) === */
-.header__topBarContainer,
-.header__container,
 .footer__container,
 .footer__bottomContainer,
 .catalog__container,
@@ -5186,8 +5184,6 @@ ul {
 .cases-page,
 .blog__container,
 .contacts-page__container,
-.header__topBarContainer,
-.header__container,
 .footer__container,
 .footer__bottomContainer {
   padding-left: 24px;
@@ -5233,8 +5229,6 @@ ul {
   .cases-page,
   .blog__container,
   .contacts-page__container,
-  .header__topBarContainer,
-  .header__container,
   .footer__container,
   .footer__bottomContainer {
     padding-left: 12px;
