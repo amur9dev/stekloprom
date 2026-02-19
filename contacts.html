@@ -182,7 +182,12 @@
         <div class="contacts-page__container">
           <nav class="breadcrumbs contacts-page__breadcrumbs" aria-label="Хлебные крошки">
             <ol class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  <span class="icon-placeholder icon-placeholder--xs"></span>
+                  <span>Главная</span>
+                </a>
+              </li>
               <li class="breadcrumbs__item"><span class="breadcrumbs__separator">›</span></li>
               <li class="breadcrumbs__item breadcrumbs__item--current">Контакты</li>
             </ol>
@@ -283,7 +288,7 @@
 
               <div class="contacts-form__group">
                 <label for="contact-phone" class="contacts-form__label">Телефон *</label>
-                <input id="contact-phone" type="tel" placeholder="+7 (___) ___-__-__" class="contacts-form__input" />
+                <input id="contact-phone" type="tel" placeholder="+7 (___) ___-__-__" class="contacts-form__input" data-phone-input />
               </div>
 
               <div class="contacts-form__group">
@@ -301,7 +306,6 @@
           </section>
         </div>
 
-        <a href="tel:+78631234567" class="contacts-page__floating-call" aria-label="Позвонить"></a>
       </main>
 
       <footer class="footer">
