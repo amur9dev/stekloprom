@@ -573,12 +573,12 @@ ul {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 760px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 140px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .hero__background {
@@ -640,7 +640,7 @@ ul {
 }
 
 .hero__title {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 800;
   line-height: 1.1;
   margin: 0 0 24px 0;
@@ -655,7 +655,7 @@ ul {
 }
 
 .hero__subtitle {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 40px 0;
@@ -766,7 +766,7 @@ ul {
 }
 
 .solutions__title {
-  font-size: 17px;
+  font-size: 42px;
   font-weight: 700;
   color: #00407e;
   margin: 0 0 12px 0;
@@ -986,7 +986,7 @@ ul {
 }
 
 .howwework__title {
-  font-size: 17px;
+  font-size: 42px;
   font-weight: 700;
   color: #00407e;
   margin: 0 0 12px 0;
@@ -1096,7 +1096,7 @@ ul {
 }
 
 .whyus__title {
-  font-size: 17px;
+  font-size: 42px;
   font-weight: 700;
   color: #00407e;
   margin: 0 0 12px 0;
@@ -1212,7 +1212,7 @@ ul {
 }
 
 .forwhom__title {
-  font-size: 18px;
+  font-size: 42px;
   font-weight: 700;
   color: #00407e;
   margin: 0 0 16px 0;
@@ -1330,7 +1330,7 @@ ul {
 }
 
 .cases__title {
-  font-size: 18px;
+  font-size: 42px;
   font-weight: 700;
   color: #00407e;
   margin: 0 0 16px 0;
@@ -1495,7 +1495,7 @@ ul {
 }
 
 .contactform__title {
-  font-size: 18px;
+  font-size: 56px;
   font-weight: 700;
   margin: 0 0 20px 0;
   letter-spacing: -0.5px;
