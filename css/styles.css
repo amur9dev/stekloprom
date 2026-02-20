@@ -573,12 +573,12 @@ ul {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 760px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .hero__background {
@@ -640,7 +640,7 @@ ul {
 }
 
 .hero__title {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 1.1;
   margin: 0 0 24px 0;
@@ -655,7 +655,7 @@ ul {
 }
 
 .hero__subtitle {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.6;
   margin: 0 0 40px 0;
@@ -3075,8 +3075,8 @@ ul {
     padding: 0 16px;
   }
 
-.solutions__title {
-  font-size: 42px;
+  .solutions__title {
+    font-size: 18px;
   }
 
   .solutions__subtitle {
@@ -3115,8 +3115,8 @@ ul {
     margin-bottom: 32px;
   }
 
-.howwework__title {
-  font-size: 42px;
+  .howwework__title {
+    font-size: 16px;
   }
 
   .howwework__subtitle {
@@ -3192,8 +3192,8 @@ ul {
     padding: 60px 0;
   }
 
-.whyus__title {
-  font-size: 42px;
+  .whyus__title {
+    font-size: 18px;
   }
 
   .whyus__subtitle {
@@ -3221,8 +3221,8 @@ ul {
     padding: 80px 0;
   }
 
-.forwhom__title {
-  font-size: 42px;
+  .forwhom__title {
+    font-size: 17px;
   }
 
   .forwhom__grid {
@@ -3254,8 +3254,8 @@ ul {
     margin-bottom: 32px;
   }
 
-.cases__title {
-  font-size: 42px;
+  .cases__title {
+    font-size: 18px;
   }
 
   .cases__subtitle {
@@ -3315,8 +3315,8 @@ ul {
     padding: 80px 0;
   }
 
-.contactform__title {
-  font-size: 56px;
+  .contactform__title {
+    font-size: 17px;
   }
 
   .contactform__form {
