@@ -384,7 +384,20 @@ const setupProductImageSliders = () => {
     const dots = document.createElement('div');
     dots.className = 'productSlider__dots';
 
-    const dotButtons = [0, 1].map((index) => {
+    const prevButton = document.createElement('button');
+    prevButton.type = 'button';
+    prevButton.className = 'productSlider__arrow productSlider__arrow--prev';
+    prevButton.setAttribute('aria-label', 'Предыдущее изображение');
+    prevButton.innerHTML = '‹';
+
+    const nextButton = document.createElement('button');
+    nextButton.type = 'button';
+    nextButton.className = 'productSlider__arrow productSlider__arrow--next';
+    nextButton.setAttribute('aria-label', 'Следующее изображение');
+    nextButton.innerHTML = '›';
+
+    const slidesCount = 2;
+    const dotButtons = Array.from({ length: slidesCount }, (_, index) => {
       const dot = document.createElement('button');
       dot.type = 'button';
       dot.className = 'productSlider__dot';
@@ -398,13 +411,21 @@ const setupProductImageSliders = () => {
     container.setAttribute('data-product-slider', '');
     container.innerHTML = '';
     container.appendChild(track);
+    container.appendChild(prevButton);
+    container.appendChild(nextButton);
     container.appendChild(dots);
 
     let currentIndex = 0;
     let startX = 0;
 
+    const normalizeIndex = (index) => {
+      if (index < 0) return slidesCount - 1;
+      if (index >= slidesCount) return 0;
+      return index;
+    };
+
     const update = (nextIndex) => {
-      currentIndex = Math.max(0, Math.min(1, nextIndex));
+      currentIndex = normalizeIndex(nextIndex);
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
       dotButtons.forEach((dot, index) => {
         dot.classList.toggle('productSlider__dot--active', index === currentIndex);
@@ -414,6 +435,9 @@ const setupProductImageSliders = () => {
     dotButtons.forEach((dot, index) => {
       dot.addEventListener('click', () => update(index));
     });
+
+    prevButton.addEventListener('click', () => update(currentIndex - 1));
+    nextButton.addEventListener('click', () => update(currentIndex + 1));
 
     container.addEventListener('touchstart', (event) => {
       startX = event.touches[0].clientX;
