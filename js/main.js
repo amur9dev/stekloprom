@@ -348,6 +348,113 @@ const setupCallbackForm = () => {
   });
 };
 
+
+const setupProductImageSliders = () => {
+  const initSlider = (container, primaryImage) => {
+    if (!container || !primaryImage || container.dataset.sliderReady === 'true') return;
+
+    const primarySrc = primaryImage.getAttribute('src') || '/placeholder.svg';
+    const primaryAlt = primaryImage.getAttribute('alt') || 'Изображение товара';
+    const secondarySrc = primaryImage.dataset.secondImage || primarySrc;
+
+    const primaryImg = document.createElement('img');
+    primaryImg.className = primaryImage.className;
+    primaryImg.src = primarySrc;
+    primaryImg.alt = primaryAlt;
+
+    const secondaryImg = document.createElement('img');
+    secondaryImg.className = `${primaryImage.className} productSlider__image--secondary`;
+    secondaryImg.src = secondarySrc;
+    secondaryImg.alt = `${primaryAlt} — дополнительный ракурс`;
+
+    const track = document.createElement('div');
+    track.className = 'productSlider__track';
+
+    const slide1 = document.createElement('div');
+    slide1.className = 'productSlider__slide';
+    slide1.appendChild(primaryImg);
+
+    const slide2 = document.createElement('div');
+    slide2.className = 'productSlider__slide';
+    slide2.appendChild(secondaryImg);
+
+    track.appendChild(slide1);
+    track.appendChild(slide2);
+
+    const dots = document.createElement('div');
+    dots.className = 'productSlider__dots';
+
+    const dotButtons = [0, 1].map((index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'productSlider__dot';
+      dot.setAttribute('aria-label', `Показать изображение ${index + 1}`);
+      if (index === 0) dot.classList.add('productSlider__dot--active');
+      dots.appendChild(dot);
+      return dot;
+    });
+
+    container.classList.add('productSlider');
+    container.setAttribute('data-product-slider', '');
+    container.innerHTML = '';
+    container.appendChild(track);
+    container.appendChild(dots);
+
+    let currentIndex = 0;
+    let startX = 0;
+
+    const update = (nextIndex) => {
+      currentIndex = Math.max(0, Math.min(1, nextIndex));
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      dotButtons.forEach((dot, index) => {
+        dot.classList.toggle('productSlider__dot--active', index === currentIndex);
+      });
+    };
+
+    dotButtons.forEach((dot, index) => {
+      dot.addEventListener('click', () => update(index));
+    });
+
+    container.addEventListener('touchstart', (event) => {
+      startX = event.touches[0].clientX;
+    }, { passive: true });
+
+    container.addEventListener('touchend', (event) => {
+      const endX = event.changedTouches[0].clientX;
+      const deltaX = endX - startX;
+
+      if (Math.abs(deltaX) < 40) return;
+      if (deltaX < 0) update(currentIndex + 1);
+      if (deltaX > 0) update(currentIndex - 1);
+    }, { passive: true });
+
+    container.dataset.sliderReady = 'true';
+  };
+
+  document.querySelectorAll('.solutions__cardImageWrapper').forEach((wrapper) => {
+    const image = wrapper.querySelector('img');
+    initSlider(wrapper, image);
+  });
+
+  document.querySelectorAll('.catalog__cardImage').forEach((image) => {
+    if (image.closest('[data-product-slider]')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'catalog__cardImageWrapper';
+    image.parentNode.insertBefore(wrapper, image);
+    initSlider(wrapper, image);
+    image.remove();
+  });
+
+  document.querySelectorAll('.catalogDetail__image').forEach((image) => {
+    if (image.closest('[data-product-slider]')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'catalogDetail__imageWrapper';
+    image.parentNode.insertBefore(wrapper, image);
+    initSlider(wrapper, image);
+    image.remove();
+  });
+};
+
 const setupCasesSlider = () => {
   const slider = document.querySelector('[data-cases-slider]');
   const dots = Array.from(document.querySelectorAll('[data-cases-dot]'));
@@ -387,5 +494,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupContactForm();
   setupCallbackForm();
   setupCasesSlider();
+  setupProductImageSliders();
   setupFooterYear();
 });
