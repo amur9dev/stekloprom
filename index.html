@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Основные мета-теги -->
     <title>Стеклопром — Производство стеклопакетов в Ростове-на-Дону</title>
-    <meta name="description" content="Производство и установка стеклопакетов в Ростове-на-Дону. Изготовление за 1 час, доставка за 2 часа. Гарантия 5 лет. Энергосберегающие, шумоизоляционные стеклопакеты." />
-    <meta name="keywords" content="стеклопакеты, производство стеклопакетов, Ростов-на-Дону, окна ПВХ, энергосберегающие стеклопакеты" />
+    <meta name="description" content="Производство стеклопакетов в Ростове-на-Дону от производителя. Изготовление за 1 час, доставка за 2 часа. Гарантия 5 лет. Цены от 1 200 ₽/м²." />
+    <meta name="keywords" content="стеклопакеты Ростов-на-Дону, производство стеклопакетов Ростов, купить стеклопакеты, энергосберегающие стеклопакеты Ростов, шумоизоляционные стеклопакеты" />
     <meta name="author" content="Стеклопром" />
     <meta name="robots" content="index, follow" />
-    
+
     <!-- Региональные мета-теги -->
     <meta name="geo.region" content="RU-ROS" />
     <meta name="geo.placename" content="Ростов-на-Дону" />
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Стеклопром — Производство стеклопакетов в Ростове-на-Дону" />
     <meta property="og:description" content="Производство и установка стеклопакетов. Изготовление за 1 час, доставка за 2 часа. Гарантия 5 лет." />
@@ -26,26 +26,834 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Стеклопром — производство стеклопакетов в Ростове-на-Дону" />
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Стеклопром — Производство стеклопакетов" />
     <meta name="twitter:description" content="Производство и установка стеклопакетов в Ростове-на-Дону. Гарантия 5 лет." />
-    
+
     <!-- Шрифт Inter от Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/logo_footer.png" />
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://stekloprom-rostov.ru" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://stekloprom-rostov.ru","name":"Стеклопром","description":"Производство и установка стеклопакетов в Ростове-на-Дону","url":"https://stekloprom-rostov.ru","logo":"https://stekloprom-rostov.ru/logo.svg","telephone":"+7 (863) 123-45-67","email":"info@stekloprom-rostov.ru","address":{"@type":"PostalAddress","streetAddress":"ул. Промышленная, 15","addressLocality":"Ростов-на-Дону","addressRegion":"Ростовская область","postalCode":"344000","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":47.2357,"longitude":39.7015},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Mo-Fr","opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sa","opens":"09:00","closes":"15:00"}],"sameAs":[]}
+    </script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+<div class="layout">
+      <header class="header" data-header>
+        <div class="header__topBar">
+          <div class="header__topBarContainer">
+            <div class="header__topBarAddress">
+              <span class="icon-placeholder icon-placeholder--xs"></span>
+              <span>Ростов-на-Дону</span>
+            </div>
+            <div class="header__topBarContacts">
+              <div class="header__topBarWorkHours">
+                <span class="icon-placeholder icon-placeholder--xs icon-placeholder--inline"></span>
+                Пн-Пт: 8:00-17:00, Сб: 9:00-13:00
+              </div>
+              <a href="tel:+78631234567" class="header__topBarPhone">
+                <span class="icon-placeholder icon-placeholder--xs"></span>
+                +7 (863) 123-45-67
+              </a>
+              <a href="tel:+78637654321" class="header__topBarPhone header__topBarPhone--secondary">
+                +7 (863) 765-43-21
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__main">
+          <div class="header__container">
+            <div class="header__logo">
+              <a href="index.html" class="header__logoLink">
+                <img src="/images/logo.png" alt="Стеклопром" class="header__logoImage" />
+              </a>
+            </div>
+
+            <nav class="header__nav" aria-label="Основная навигация">
+              <ul class="header__menu">
+                <li class="header__menuItem">
+                  <a href="index.html" class="header__menuLink header__menuLink--active">Главная</a>
+                </li>
+                <li class="header__menuItem header__menuItem--hasDropdown" data-dropdown>
+                  <a href="catalog.html" class="header__menuLink">
+                    Каталог
+                    <span class="icon-placeholder icon-placeholder--sm header__menuLinkIcon"></span>
+                  </a>
+                  <ul class="header__dropdown">
+                    <li class="header__dropdownItem"><a href="catalog/odnokamernye.html" class="header__dropdownLink">Однокамерные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/dvuhkamernye.html" class="header__dropdownLink">Двухкамерные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/energosberegayushchie.html" class="header__dropdownLink">Энергосберегающие</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/shumoizolyatsionnye.html" class="header__dropdownLink">Шумоизоляционные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/multifunktsionalnye.html" class="header__dropdownLink">Мультифункциональные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/solntsezashchitnye.html" class="header__dropdownLink">Солнцезащитные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/udaroprochnye.html" class="header__dropdownLink">Ударопрочные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/tonirovannye.html" class="header__dropdownLink">Тонированные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/zakalennye.html" class="header__dropdownLink">С закаленным стеклом</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/tripleks.html" class="header__dropdownLink">С триплексом</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/dekorativnye.html" class="header__dropdownLink">С декоративной раскладкой</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/teplosberegayushchie.html" class="header__dropdownLink">Теплосберегающие</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/zerkalnye.html" class="header__dropdownLink">Зеркальные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/nestandartnye.html" class="header__dropdownLink">Нестандартные</a></li>
+                    <li class="header__dropdownItem"><a href="catalog/gazonapolnennye.html" class="header__dropdownLink">С газонаполнением</a></li>
+                  </ul>
+                </li>
+                <li class="header__menuItem"><a href="services.html" class="header__menuLink">Услуги</a></li>
+                <li class="header__menuItem"><a href="about.html" class="header__menuLink">О компании</a></li>
+                <li class="header__menuItem"><a href="cases.html" class="header__menuLink">Наши работы</a></li>
+                <li class="header__menuItem"><a href="blog.html" class="header__menuLink">Блог</a></li>
+                <li class="header__menuItem"><a href="contacts.html" class="header__menuLink">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="header__contacts">
+              <a href="tel:+78631234567" class="header__phone">
+                <span class="header__phoneIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </span>
+                <span class="header__phoneText">
+                  <span class="header__phonePrimary">+7 (863) 123-45-67</span>
+                  <span class="header__phoneSecondary">+7 (863) 765-43-21</span>
+                </span>
+              </a>
+              <button class="header__callButton" data-modal-open="callback">Заказать звонок</button>
+            </div>
+
+            <div class="header__mobileControls">
+              <button class="header__mobileMenuButton" aria-label="Открыть меню" aria-expanded="false" data-mobile-menu-button>
+                <span class="header__mobileMenuIcon"></span>
+                <span class="header__mobileMenuIcon"></span>
+                <span class="header__mobileMenuIcon"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="header__mobilePanel" data-mobile-panel>
+            <nav aria-label="Мобильная навигация">
+              <ul class="header__mobileMenu">
+                <li class="header__mobileMenuItem"><a href="index.html" class="header__mobileMenuLink header__mobileMenuLink--active">Главная</a></li>
+                <li class="header__mobileMenuItem">
+                  <button class="header__mobileMenuLink header__mobileMenuLink--hasDropdown" data-mobile-dropdown-button>
+                    Каталог
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </button>
+                  <ul class="header__mobileDropdown">
+                    <li><a href="catalog.html" class="header__mobileDropdownLink">Все каталог</a></li>
+                    <li><a href="catalog/odnokamernye.html" class="header__mobileDropdownLink">Однокамерные</a></li>
+                    <li><a href="catalog/dvuhkamernye.html" class="header__mobileDropdownLink">Двухкамерные</a></li>
+                    <li><a href="catalog/energosberegayushchie.html" class="header__mobileDropdownLink">Энергосберегающие</a></li>
+                    <li><a href="catalog/shumoizolyatsionnye.html" class="header__mobileDropdownLink">Шумоизоляционные</a></li>
+                    <li><a href="catalog/multifunktsionalnye.html" class="header__mobileDropdownLink">Мультифункциональные</a></li>
+                    <li><a href="catalog/solntsezashchitnye.html" class="header__mobileDropdownLink">Солнцезащитные</a></li>
+                    <li><a href="catalog/udaroprochnye.html" class="header__mobileDropdownLink">Ударопрочные</a></li>
+                    <li><a href="catalog/tonirovannye.html" class="header__mobileDropdownLink">Тонированные</a></li>
+                    <li><a href="catalog/zakalennye.html" class="header__mobileDropdownLink">С закаленным стеклом</a></li>
+                    <li><a href="catalog/tripleks.html" class="header__mobileDropdownLink">С триплексом</a></li>
+                    <li><a href="catalog/dekorativnye.html" class="header__mobileDropdownLink">С декоративной раскладкой</a></li>
+                    <li><a href="catalog/teplosberegayushchie.html" class="header__mobileDropdownLink">Теплосберегающие</a></li>
+                    <li><a href="catalog/zerkalnye.html" class="header__mobileDropdownLink">Зеркальные</a></li>
+                    <li><a href="catalog/nestandartnye.html" class="header__mobileDropdownLink">Нестандартные</a></li>
+                    <li><a href="catalog/gazonapolnennye.html" class="header__mobileDropdownLink">С газонаполнением</a></li>
+                  </ul>
+                </li>
+                <li class="header__mobileMenuItem"><a href="services.html" class="header__mobileMenuLink">Услуги</a></li>
+                <li class="header__mobileMenuItem"><a href="about.html" class="header__mobileMenuLink">О компании</a></li>
+                <li class="header__mobileMenuItem"><a href="cases.html" class="header__mobileMenuLink">Наши работы</a></li>
+                <li class="header__mobileMenuItem"><a href="blog.html" class="header__mobileMenuLink">Блог</a></li>
+                <li class="header__mobileMenuItem"><a href="contacts.html" class="header__mobileMenuLink">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="header__mobileContacts">
+              <a href="tel:+78631234567" class="header__mobilePhone">
+                <span class="icon-placeholder icon-placeholder--sm"></span>
+                +7 (863) 123-45-67
+              </a>
+              <a href="tel:+78637654321" class="header__mobilePhone header__mobilePhone--secondary">
+                +7 (863) 765-43-21
+              </a>
+              <button class="header__mobileCallButton" data-modal-open="callback">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout__main">
+        <section class="hero">
+          <div class="hero__background">
+            <img src="/images/hero-banner.jpg" alt="Производство стеклопакетов в Ростове-на-Дону" class="hero__backgroundImage" />
+            <div class="hero__backgroundOverlay"></div>
+          </div>
+
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__badge">
+                <span class="hero__badgeIcon"></span>
+                Собственное производство с 2008 года
+              </div>
+
+              <h1 class="hero__title">
+                Стеклопакеты <span class="hero__titleAccent">в Ростове-на-Дону</span> от производителя
+              </h1>
+
+              <p class="hero__subtitle">
+                Изготовление стеклопакетов любой сложности за 1 час. Доставка по городу за 2 часа. Гарантия качества 5 лет. Работаем с 2008 года.
+              </p>
+
+              <div class="hero__benefits">
+                <div class="hero__benefit">
+                  <div class="hero__benefitIcon">
+                    <span class="icon-placeholder icon-placeholder--md icon-placeholder--white"></span>
+                  </div>
+                  <span class="hero__benefitText">Своё производство</span>
+                </div>
+                <div class="hero__benefit">
+                  <div class="hero__benefitIcon">
+                    <span class="icon-placeholder icon-placeholder--md icon-placeholder--white"></span>
+                  </div>
+                  <span class="hero__benefitText">Готовность за 1 час</span>
+                </div>
+                <div class="hero__benefit">
+                  <div class="hero__benefitIcon">
+                    <span class="icon-placeholder icon-placeholder--md icon-placeholder--white"></span>
+                  </div>
+                  <span class="hero__benefitText">Доставка 2 часа</span>
+                </div>
+                <div class="hero__benefit">
+                  <div class="hero__benefitIcon">
+                    <span class="icon-placeholder icon-placeholder--md icon-placeholder--white"></span>
+                  </div>
+                  <span class="hero__benefitText">Гарантия 5 лет</span>
+                </div>
+              </div>
+
+              <div class="hero__actions">
+                <button class="hero__button hero__button--primary" data-modal-open="callback">
+                  Заказать расчёт
+                  <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+                </button>
+                <a href="catalog.html" class="hero__button hero__button--secondary">
+                  Смотреть каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="solutions">
+          <div class="solutions__container">
+            <div class="solutions__header">
+              <h2 class="solutions__title">Популярные решения</h2>
+              <p class="solutions__subtitle">
+                Выберите оптимальный тип стеклопакета для ваших задач. Мы поможем подобрать идеальное решение.
+              </p>
+            </div>
+
+            <div class="solutions__grid">
+              <article class="solutions__card">
+                <div class="solutions__cardImageWrapper">
+                  <img src="/placeholder.svg" alt="Двухкамерные стеклопакеты" class="solutions__cardImage" loading="lazy" />
+                </div>
+                <h3 class="solutions__cardTitle">Двухкамерные</h3>
+                <p class="solutions__cardDescription">
+                  Оптимальный выбор для жилых помещений с отличной тепло- и шумоизоляцией. Надёжный и проверенный вариант
+                </p>
+                <ul class="solutions__cardFeatures">
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Толщина 32-40 мм</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Формула 4-12-4-12-4</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Улучшенная изоляция</li>
+                </ul>
+                <div class="solutions__cardPrice">от 1 800 <span class="solutions__cardPriceLabel">₽/м²</span></div>
+                <a href="catalog/dvuhkamernye.html" class="solutions__cardButton">
+                  Подробнее
+                  <span class="icon-placeholder icon-placeholder--xs"></span>
+                </a>
+              </article>
+
+              <article class="solutions__card solutions__card--popular">
+                <div class="solutions__cardBadge">Популярный</div>
+                <div class="solutions__cardImageWrapper">
+                  <img src="/placeholder.svg" alt="Мультифункциональные стеклопакеты" class="solutions__cardImage" loading="lazy" />
+                </div>
+                <h3 class="solutions__cardTitle">Мультифункциональные</h3>
+                <p class="solutions__cardDescription">
+                  Сочетание энергосбережения, защиты от солнца и шумоизоляции в одном стеклопакете. Премиальное решение
+                </p>
+                <ul class="solutions__cardFeatures">
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Защита от УФ до 99%</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Защита от жары</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Энергосбережение</li>
+                </ul>
+                <div class="solutions__cardPrice">от 3 600 <span class="solutions__cardPriceLabel">₽/м²</span></div>
+                <a href="catalog/multifunktsionalnye.html" class="solutions__cardButton">
+                  Подробнее
+                  <span class="icon-placeholder icon-placeholder--xs icon-placeholder--white"></span>
+                </a>
+              </article>
+
+              <article class="solutions__card">
+                <div class="solutions__cardImageWrapper">
+                  <img src="/placeholder.svg" alt="Энергосберегающие стеклопакеты" class="solutions__cardImage" loading="lazy" />
+                </div>
+                <h3 class="solutions__cardTitle">Энергосберегающие</h3>
+                <p class="solutions__cardDescription">
+                  Экономия на отоплении до 40% за счёт специального I-покрытия. Сохраняет тепло зимой и прохладу летом
+                </p>
+                <ul class="solutions__cardFeatures">
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>I-стекло Low-E</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Заполнение аргоном</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Экономия до 40%</li>
+                </ul>
+                <div class="solutions__cardPrice">от 2 400 <span class="solutions__cardPriceLabel">₽/м²</span></div>
+                <a href="catalog/energosberegayushchie.html" class="solutions__cardButton">
+                  Подробнее
+                  <span class="icon-placeholder icon-placeholder--xs"></span>
+                </a>
+              </article>
+
+              <article class="solutions__card">
+                <div class="solutions__cardImageWrapper">
+                  <img src="/placeholder.svg" alt="Шумоизоляционные стеклопакеты" class="solutions__cardImage" loading="lazy" />
+                </div>
+                <h3 class="solutions__cardTitle">Шумоизоляционные</h3>
+                <p class="solutions__cardDescription">
+                  Тишина даже у оживлённой дороги благодаря многослойной конструкции. Снижение шума до 42 дБ
+                </p>
+                <ul class="solutions__cardFeatures">
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Триплекс</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>До 42 дБ изоляции</li>
+                  <li class="solutions__cardFeature"><span class="solutions__cardFeatureDot"></span>Разная толщина стёкол</li>
+                </ul>
+                <div class="solutions__cardPrice">от 2 800 <span class="solutions__cardPriceLabel">₽/м²</span></div>
+                <a href="catalog/shumoizolyatsionnye.html" class="solutions__cardButton">
+                  Подробнее
+                  <span class="icon-placeholder icon-placeholder--xs"></span>
+                </a>
+              </article>
+            </div>
+
+            <div class="solutions__footer">
+              <a href="catalog.html" class="solutions__allButton">
+                Смотреть весь каталог
+                <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="howwework">
+          <div class="howwework__container">
+            <header class="howwework__header">
+              <h2 class="howwework__title">Как мы работаем</h2>
+              <p class="howwework__subtitle">
+                От заявки до готового стеклопакета — всего 5 простых шагов. Мы ценим ваше время.
+              </p>
+            </header>
+
+            <div class="howwework__steps">
+              <div class="howwework__step">
+                <div class="howwework__stepNumber">1</div>
+                <div class="howwework__stepContent">
+                  <div class="howwework__stepIcon">
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </div>
+                  <h3 class="howwework__stepTitle">Заявка</h3>
+                  <p class="howwework__stepDescription">Оставьте заявку на сайте или позвоните нам</p>
+                </div>
+              </div>
+              <div class="howwework__step">
+                <div class="howwework__stepNumber">2</div>
+                <div class="howwework__stepContent">
+                  <div class="howwework__stepIcon">
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </div>
+                  <h3 class="howwework__stepTitle">Замер</h3>
+                  <p class="howwework__stepDescription">Бесплатный выезд замерщика в удобное время</p>
+                </div>
+              </div>
+              <div class="howwework__step">
+                <div class="howwework__stepNumber">3</div>
+                <div class="howwework__stepContent">
+                  <div class="howwework__stepIcon">
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </div>
+                  <h3 class="howwework__stepTitle">Производство</h3>
+                  <p class="howwework__stepDescription">Изготовление стеклопакетов на современном оборудовании</p>
+                </div>
+              </div>
+              <div class="howwework__step">
+                <div class="howwework__stepNumber">4</div>
+                <div class="howwework__stepContent">
+                  <div class="howwework__stepIcon">
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </div>
+                  <h3 class="howwework__stepTitle">Доставка</h3>
+                  <p class="howwework__stepDescription">Бережная доставка по Ростову-на-Дону и области</p>
+                </div>
+              </div>
+              <div class="howwework__step">
+                <div class="howwework__stepNumber">5</div>
+                <div class="howwework__stepContent">
+                  <div class="howwework__stepIcon">
+                    <span class="icon-placeholder icon-placeholder--sm"></span>
+                  </div>
+                  <h3 class="howwework__stepTitle">Готово</h3>
+                  <p class="howwework__stepDescription">Приёмка заказа и гарантия 5 лет</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="whyus">
+          <div class="whyus__container">
+            <header class="whyus__header">
+              <h2 class="whyus__title">Почему выбирают нас</h2>
+              <p class="whyus__subtitle">
+                Компания «Стеклопром» работает на рынке Ростова-на-Дону с 2008 года.
+                Наша команда из 30 профессионалов ежедневно создаёт качественные стеклопакеты.
+                Собственное производство, офис и склад позволяют контролировать весь процесс —
+                от изготовления до доставки.
+              </p>
+            </header>
+
+            <div class="whyus__grid">
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Собственное производство</h3>
+                  <p class="whyus__cardDescription">Полный цикл производства в Ростове-на-Дону. Офис, производство и склад — всё под контролем</p>
+                </div>
+              </article>
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Качество и надёжность</h3>
+                  <p class="whyus__cardDescription">Используем качественные стёкла и комплектующие. Сертификаты качества, соответствие ГОСТ</p>
+                </div>
+              </article>
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Изготовление за 1 час</h3>
+                  <p class="whyus__cardDescription">Быстрое производство стандартных стеклопакетов благодаря современному оборудованию</p>
+                </div>
+              </article>
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Доставка за 2 часа</h3>
+                  <p class="whyus__cardDescription">Быстрая доставка по Ростову-на-Дону и области в день заказа</p>
+                </div>
+              </article>
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Гарантия 5 лет</h3>
+                  <p class="whyus__cardDescription">Официальная гарантия на все виды продукции. Проверяем качество перед отправкой</p>
+                </div>
+              </article>
+              <article class="whyus__card">
+                <div class="whyus__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--sm"></span>
+                </div>
+                <div class="whyus__cardContent">
+                  <h3 class="whyus__cardTitle">Команда профессионалов</h3>
+                  <p class="whyus__cardDescription">30 специалистов с опытом работы. Реализуем проекты любой сложности</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="whyus__stats">
+              <div class="whyus__stat">
+                <div class="whyus__statValue">с 2008</div>
+                <div class="whyus__statLabel">года на рынке</div>
+              </div>
+              <div class="whyus__stat">
+                <div class="whyus__statValue">30</div>
+                <div class="whyus__statLabel">специалистов</div>
+              </div>
+              <div class="whyus__stat">
+                <div class="whyus__statValue">5 лет</div>
+                <div class="whyus__statLabel">гарантии</div>
+              </div>
+              <div class="whyus__stat">
+                <div class="whyus__statValue">1 час</div>
+                <div class="whyus__statLabel">изготовление</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="forwhom">
+          <div class="forwhom__container">
+            <header class="forwhom__header">
+              <h2 class="forwhom__title">Для кого мы работаем</h2>
+              <p class="forwhom__subtitle">
+                Индивидуальный подход к каждому клиенту — от частного заказа до крупных строительных объектов
+              </p>
+            </header>
+
+            <div class="forwhom__grid">
+              <article class="forwhom__card">
+                <div class="forwhom__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--lg"></span>
+                </div>
+                <h3 class="forwhom__cardTitle">Частные лица</h3>
+                <p class="forwhom__cardDescription">Владельцы квартир и загородных домов в Ростове-на-Дону</p>
+                <ul class="forwhom__cardBenefits">
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Бесплатный замер на дому</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Изготовление от 1 штуки</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Доставка до подъезда</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Рассрочка без переплат</li>
+                </ul>
+              </article>
+
+              <article class="forwhom__card">
+                <div class="forwhom__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--lg"></span>
+                </div>
+                <h3 class="forwhom__cardTitle">Оконные компании</h3>
+                <p class="forwhom__cardDescription">Партнёрские условия для производителей окон ПВХ</p>
+                <ul class="forwhom__cardBenefits">
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Оптовые цены от 10%</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Срочное производство</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Отсрочка платежа</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Персональный менеджер</li>
+                </ul>
+              </article>
+
+              <article class="forwhom__card">
+                <div class="forwhom__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--lg"></span>
+                </div>
+                <h3 class="forwhom__cardTitle">Застройщики</h3>
+                <p class="forwhom__cardDescription">Крупные объёмы для строительных компаний</p>
+                <ul class="forwhom__cardBenefits">
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Скидки до 25%</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Поставка на объект</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Гибкий график</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Сертификаты на объём</li>
+                </ul>
+              </article>
+
+              <article class="forwhom__card">
+                <div class="forwhom__cardIcon">
+                  <span class="icon-placeholder icon-placeholder--lg"></span>
+                </div>
+                <h3 class="forwhom__cardTitle">Дилеры</h3>
+                <p class="forwhom__cardDescription">Выгодные условия для торговых представителей</p>
+                <ul class="forwhom__cardBenefits">
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Дилерские цены</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Маркетинговая поддержка</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Обучение персонала</li>
+                  <li class="forwhom__cardBenefit"><span class="icon-placeholder icon-placeholder--xs forwhom__cardBenefitIcon"></span>Эксклюзивные права</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="cases">
+          <div class="cases__container">
+            <header class="cases__header">
+              <h2 class="cases__title">Наши работы в Ростове-на-Дону</h2>
+              <p class="cases__subtitle">
+                Более 500 успешных проектов — от частных домов до крупных жилых комплексов и бизнес-центров
+              </p>
+            </header>
+
+            <div class="cases__grid">
+              <article class="cases__card">
+                <img src="/placeholder.svg" alt="Проект №1 — остекление тип объекта в Ростове-на-Дону" class="cases__cardImage" />
+                <div class="cases__cardOverlay">
+                  <span class="cases__cardBadge">Тип объекта</span>
+                  <h3 class="cases__cardTitle">Проект №1</h3>
+                  <div class="cases__cardInfo">
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>Ростов-на-Дону</span>
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>— м²</span>
+                  </div>
+                </div>
+              </article>
+              <article class="cases__card">
+                <img src="/placeholder.svg" alt="Проект №2 — остекление тип объекта в Ростове-на-Дону" class="cases__cardImage" />
+                <div class="cases__cardOverlay">
+                  <span class="cases__cardBadge">Тип объекта</span>
+                  <h3 class="cases__cardTitle">Проект №2</h3>
+                  <div class="cases__cardInfo">
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>Ростов-на-Дону</span>
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>— м²</span>
+                  </div>
+                </div>
+              </article>
+              <article class="cases__card">
+                <img src="/placeholder.svg" alt="Проект №3 — остекление тип объекта в Ростове-на-Дону" class="cases__cardImage" />
+                <div class="cases__cardOverlay">
+                  <span class="cases__cardBadge">Тип объекта</span>
+                  <h3 class="cases__cardTitle">Проект №3</h3>
+                  <div class="cases__cardInfo">
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>Ростов-на-Дону</span>
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>— м²</span>
+                  </div>
+                </div>
+              </article>
+              <article class="cases__card">
+                <img src="/placeholder.svg" alt="Проект №4 — остекление тип объекта в Ростове-на-Дону" class="cases__cardImage" />
+                <div class="cases__cardOverlay">
+                  <span class="cases__cardBadge">Тип объекта</span>
+                  <h3 class="cases__cardTitle">Проект №4</h3>
+                  <div class="cases__cardInfo">
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>Ростов-на-Дону</span>
+                    <span class="cases__cardInfoItem"><span class="icon-placeholder icon-placeholder--xs"></span>— м²</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="cases__footer">
+              <a href="cases.html" class="cases__button">
+                Все наши работы
+                <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contactform">
+          <div class="contactform__container">
+            <div class="contactform__wrapper">
+              <div class="contactform__content">
+                <h2 class="contactform__title">Закажите бесплатный расчёт</h2>
+                <p class="contactform__subtitle">
+                  Оставьте заявку и получите точный расчёт стоимости стеклопакетов для вашего проекта в Ростове-на-Дону
+                </p>
+
+                <ul class="contactform__benefits">
+                  <li class="contactform__benefit">
+                    <div class="contactform__benefitIcon"><span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span></div>
+                    <span class="contactform__benefitText">Перезвоним оперативно</span>
+                  </li>
+                  <li class="contactform__benefit">
+                    <div class="contactform__benefitIcon"><span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span></div>
+                    <span class="contactform__benefitText">Бесплатный расчёт стоимости</span>
+                  </li>
+                  <li class="contactform__benefit">
+                    <div class="contactform__benefitIcon"><span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span></div>
+                    <span class="contactform__benefitText">Скидка 10% на первый заказ</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contactform__form" data-contact-form>
+                <div class="contactform__formSuccess" data-contact-success>
+                  <div class="contactform__formSuccessIcon">
+                    <span class="icon-placeholder icon-placeholder--lg icon-placeholder--white"></span>
+                  </div>
+                  <h3 class="contactform__formTitle contactform__formTitle--success">Заявка отправлена!</h3>
+                  <p class="contactform__formSubtitle">Мы свяжемся с вами в ближайшее время</p>
+                </div>
+
+                <form class="contactform__formFields" data-contact-fields>
+                  <h3 class="contactform__formTitle">Получите расчёт быстро</h3>
+                  <p class="contactform__formSubtitle">Заполните форму и мы перезвоним вам</p>
+
+                  <div class="contactform__formGroup">
+                    <label for="contact-name" class="contactform__formLabel">Ваше имя</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Иван Иванов" class="contactform__formInput" required />
+                    <p class="contactform__formError" data-error="contact-name"></p>
+                  </div>
+
+                  <div class="contactform__formGroup">
+                    <label for="contact-phone" class="contactform__formLabel">Телефон *</label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="+7 (___) ___-__-__" class="contactform__formInput" data-phone-input required />
+                    <p class="contactform__formError" data-error="contact-phone"></p>
+                  </div>
+
+                  <button type="submit" class="contactform__formButton" data-contact-submit>
+                    <span>Получить расчёт</span>
+                    <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+                  </button>
+
+                  <p class="contactform__formNote">
+                    Нажимая кнопку, вы соглашаетесь с
+                    <a href="privacy.html" class="contactform__formNoteLink">политикой конфиденциальности</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__main">
+          <div class="footer__container">
+            <div class="footer__grid">
+              <div class="footer__brand">
+                <a href="index.html" class="footer__logo">
+                  <img src="/images/logo_footer.png" alt="Стеклопром" class="footer__logoImage" />
+                  <span class="footer__logoText">СТЕКЛОПРОМ</span>
+                </a>
+                <p class="footer__description">
+                  Производство качественных стеклопакетов в Ростове-на-Дону с 2008 года.
+                  Современное оборудование, опытная команда и гарантия 5 лет.
+                </p>
+
+                <ul class="footer__contacts">
+                  <li class="footer__contactItem">
+                    <div class="footer__contactIcon"><span class="icon-placeholder icon-placeholder--xs"></span></div>
+                    <a href="tel:+78631234567" class="footer__contactLink">+7 (863) 123-45-67</a>
+                  </li>
+                  <li class="footer__contactItem">
+                    <div class="footer__contactIcon"><span class="icon-placeholder icon-placeholder--xs"></span></div>
+                    <a href="mailto:info@stekloprom-rostov.ru" class="footer__contactLink">info@stekloprom-rostov.ru</a>
+                  </li>
+                  <li class="footer__contactItem">
+                    <div class="footer__contactIcon"><span class="icon-placeholder icon-placeholder--xs"></span></div>
+                    <span class="footer__contactText">г. Ростов-на-Дону, ул. Промышленная, 15</span>
+                  </li>
+                  <li class="footer__contactItem">
+                    <div class="footer__contactIcon"><span class="icon-placeholder icon-placeholder--xs"></span></div>
+                    <span class="footer__contactText">Пн-Пт: 8:00-18:00, Сб: 9:00-15:00</span>
+                  </li>
+                </ul>
+
+                <div class="footer__social">
+                  <a href="https://vk.com/stekloprom_rostov" target="_blank" rel="noopener noreferrer" class="footer__socialLink" aria-label="ВКонтакте">
+                    <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white icon-placeholder--fill"></span>
+                  </a>
+                </div>
+              </div>
+
+              <nav class="footer__nav" aria-label="Каталог">
+                <h3 class="footer__navTitle">Каталог</h3>
+                <ul class="footer__navList">
+                  <li class="footer__navItem"><a href="catalog/odnokamernye.html" class="footer__navLink">Однокамерные</a></li>
+                  <li class="footer__navItem"><a href="catalog/dvuhkamernye.html" class="footer__navLink">Двухкамерные</a></li>
+                  <li class="footer__navItem"><a href="catalog/energosberegayushchie.html" class="footer__navLink">Энергосберегающие</a></li>
+                  <li class="footer__navItem"><a href="catalog/shumoizolyatsionnye.html" class="footer__navLink">Шумоизоляционные</a></li>
+                  <li class="footer__navItem"><a href="catalog/multifunktsionalnye.html" class="footer__navLink">Мультифункциональные</a></li>
+                  <li class="footer__navItem"><a href="catalog/solntsezashchitnye.html" class="footer__navLink">Солнцезащитные</a></li>
+                  <li class="footer__navItem"><a href="catalog/udaroprochnye.html" class="footer__navLink">Ударопрочные</a></li>
+                  <li class="footer__navItem"><a href="catalog/tonirovannye.html" class="footer__navLink">Тонированные</a></li>
+                  <li class="footer__navItem"><a href="catalog/zakalennye.html" class="footer__navLink">С закаленным стеклом</a></li>
+                  <li class="footer__navItem"><a href="catalog/tripleks.html" class="footer__navLink">С триплексом</a></li>
+                  <li class="footer__navItem"><a href="catalog/teplosberegayushchie.html" class="footer__navLink">Теплосберегающие</a></li>
+                  <li class="footer__navItem"><a href="catalog/zerkalnye.html" class="footer__navLink">Зеркальные</a></li>
+                  <li class="footer__navItem"><a href="catalog/nestandartnye.html" class="footer__navLink">Нестандартные</a></li>
+                  <li class="footer__navItem"><a href="catalog/gazonapolnennye.html" class="footer__navLink">С газонаполнением</a></li>
+                </ul>
+              </nav>
+
+              <nav class="footer__nav" aria-label="Компания">
+                <h3 class="footer__navTitle">Компания</h3>
+                <ul class="footer__navList">
+                  <li class="footer__navItem"><a href="about.html" class="footer__navLink">О компании</a></li>
+                  <li class="footer__navItem"><a href="cases.html" class="footer__navLink">Наши работы</a></li>
+                  <li class="footer__navItem"><a href="blog.html" class="footer__navLink">Блог</a></li>
+                  <li class="footer__navItem"><a href="services.html" class="footer__navLink">Услуги</a></li>
+                  <li class="footer__navItem"><a href="contacts.html" class="footer__navLink">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottomContainer">
+            <p class="footer__copyright">© <span data-current-year></span> Стеклопром. Все права защищены.</p>
+            <div class="footer__legal">
+              <a href="privacy.html" class="footer__legalLink">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" data-modal="callback" aria-hidden="true">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+        <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+          <span class="icon-placeholder icon-placeholder--sm"></span>
+        </button>
+        <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
+        <p class="modal__subtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+
+        <div class="callback" data-callback>
+          <div class="callback__success" data-callback-success>
+            <div class="callback__successIcon">
+              <span class="icon-placeholder icon-placeholder--lg"></span>
+            </div>
+            <h3 class="callback__successTitle">Заявка отправлена!</h3>
+            <p class="callback__successText">Мы перезвоним вам в течение 15 минут</p>
+          </div>
+
+          <form class="callback__form" data-callback-form>
+            <div class="callback__field">
+              <label for="callback-name" class="callback__label">Ваше имя *</label>
+              <input type="text" id="callback-name" name="name" placeholder="Иван" class="callback__input" required />
+              <p class="callback__error" data-error="callback-name"></p>
+            </div>
+
+            <div class="callback__field">
+              <label for="callback-phone" class="callback__label">Телефон *</label>
+              <input type="tel" id="callback-phone" name="phone" placeholder="+7 (___) ___-__-__" class="callback__input" data-phone-input required />
+              <p class="callback__error" data-error="callback-phone"></p>
+            </div>
+
+            <div class="callback__field callback__field--checkbox">
+              <label class="callback__checkboxLabel">
+                <input type="checkbox" name="agreement" class="callback__checkbox" />
+                <span>
+                  Согласен на обработку
+                  <a href="privacy.html" class="callback__link">персональных данных</a>
+                </span>
+              </label>
+              <p class="callback__error" data-error="callback-agreement"></p>
+            </div>
+
+            <button class="callback__button" type="submit" data-callback-submit>
+              <span>Заказать звонок</span>
+              <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+            </button>
+
+            <p class="callback__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <a href="tel:+78631234567" class="floating-call" aria-label="Позвонить">
+      <span class="icon-placeholder icon-placeholder--lg icon-placeholder--white"></span>
+    </a>
+
+    <button class="scroll-top" type="button" aria-label="Вернуться наверх" data-scroll-top>
+      <span class="icon-placeholder icon-placeholder--sm icon-placeholder--white"></span>
+    </button>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
