@@ -3145,13 +3145,12 @@ ul {
   .howwework__steps::before {
     content: '';
     position: absolute;
-    top: 118px;
+    top: 22px;
     bottom: 22px;
-    left: -90px;
-    width: 222px;
+    left: 21px;
+    width: 2px;
     background: linear-gradient(180deg, #ff342f 0%, #ff6b68 100%);
     z-index: 0;
-    transform: rotate(90deg);
   }
 
   .howwework__step {
