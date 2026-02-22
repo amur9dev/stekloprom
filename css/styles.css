@@ -411,7 +411,7 @@ ul {
   border-radius: 10px;
   font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
   white-space: nowrap;
@@ -434,7 +434,7 @@ ul {
   height: 44px;
   background: none;
   border: none;
-  cursor: pointer;
+  cursor: default;
   padding: 8px;
   gap: 5px;
   border-radius: 8px;
@@ -517,7 +517,7 @@ ul {
   text-decoration: none;
   background: none;
   border: none;
-  cursor: pointer;
+  cursor: default;
   transition: color 0.2s ease;
 }
 
@@ -593,7 +593,7 @@ ul {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
 }
 
@@ -746,7 +746,7 @@ ul {
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
@@ -923,7 +923,7 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.45);
   padding: 0;
-  cursor: pointer;
+  cursor: default;
 }
 
 .productSlider__dot--active {
@@ -938,8 +938,8 @@ ul {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  background: rgba(15, 23, 42, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.22);
   color: rgba(255, 255, 255, 0.92);
   display: inline-flex;
   align-items: center;
@@ -952,7 +952,7 @@ ul {
 }
 
 .productSlider__arrow:hover {
-  background: rgba(15, 23, 42, 0.48);
+  background: rgba(255, 255, 255, 0.34);
   border-color: rgba(255, 255, 255, 0.75);
   color: #ffffff;
 }
@@ -1046,7 +1046,7 @@ ul {
   font-weight: 600;
   color: #00a3d5;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s ease;
 }
 
@@ -1083,7 +1083,7 @@ ul {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 163, 213, 0.2);
 }
@@ -1128,7 +1128,7 @@ ul {
 
 .howwework__steps {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   position: relative;
 }
@@ -1559,7 +1559,7 @@ ul {
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
@@ -1766,7 +1766,7 @@ ul {
   border-radius: 12px;
   font-size: 17px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.3s ease, background 0.3s ease;
   box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
   margin-top: 8px;
@@ -2055,7 +2055,7 @@ ul {
   justify-content: center;
   color: #A0AEC0;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: default;
   transition: color 0.2s ease, background 0.2s ease;
 }
 
@@ -2176,7 +2176,7 @@ ul {
   gap: 10px;
   font-size: 13px;
   color: #718096;
-  cursor: pointer;
+  cursor: default;
 }
 
 .callback__checkbox {
@@ -2207,7 +2207,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.2s ease;
   box-shadow: 0 4px 16px rgba(229, 57, 53, 0.3);
 }
@@ -2289,7 +2289,7 @@ ul {
   justify-content: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 9998;
-  cursor: pointer;
+  cursor: default;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2361,7 +2361,7 @@ ul {
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  cursor: pointer;
+  cursor: default;
   height: 100%;
 }
 
@@ -2455,7 +2455,7 @@ ul {
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.3s ease;
 }
 
@@ -2534,7 +2534,7 @@ ul {
   border-radius: 12px;
   font-size: 17px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 6px 20px rgba(255, 52, 47, 0.35);
   align-self: flex-start;
@@ -3144,8 +3144,8 @@ ul {
     display: none;
   }
 
-  .howwework__step:nth-child(4),
-  .howwework__step:nth-child(5) {
+  .howwework__step:nth-child(3),
+  .howwework__step:nth-child(4) {
     justify-self: center;
   }
 
@@ -3166,34 +3166,7 @@ ul {
 
 @media (max-width: 768px) {
   .header__topBar {
-    display: block;
-    padding: 6px 0;
-  }
-
-  .header__topBarContainer {
-    padding: 0 12px;
-    font-size: 12px;
-    gap: 8px;
-    justify-content: space-between;
-  }
-
-  .header__topBarContacts {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .header__topBarPhone--secondary {
-    padding-left: 10px;
-    margin-left: -4px;
-  }
-
-  .header__phonePrimary {
-    font-size: 18px;
-  }
-
-  .header__phoneSecondary {
-    font-size: 14px;
+    display: none;
   }
 
   .header__container {
@@ -3861,7 +3834,7 @@ ul {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   box-shadow: 0 4px 12px rgba(255, 52, 47, 0.2);
   transition: box-shadow 0.2s ease;
 }
@@ -4674,7 +4647,7 @@ ul {
   border-radius: 50%;
   background: rgba(0, 64, 126, 0.2);
   border: none;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s ease;
   padding: 0;
 }
@@ -5172,7 +5145,7 @@ ul {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+  cursor: default;
   margin-top: 8px;
   box-shadow: 0 10px 20px rgba(255, 51, 51, 0.25);
 }
