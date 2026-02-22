@@ -3299,27 +3299,31 @@ ul {
   }
 
   .howwework__steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: relative;
   }
 
   .howwework__steps::before {
     content: '';
     position: absolute;
-    top: 22px;
-    bottom: 22px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 24px;
+    bottom: 24px;
+    left: 21px;
     width: 2px;
     background: linear-gradient(180deg, #ff342f 0%, #ff6b68 100%);
     z-index: 0;
   }
 
   .howwework__step {
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    text-align: left;
     padding: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .howwework__stepNumber {
@@ -3327,7 +3331,7 @@ ul {
     height: 44px;
     min-width: 44px;
     font-size: 18px;
-    margin: 0 auto 12px;
+    margin: 0;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
@@ -3335,21 +3339,17 @@ ul {
   }
 
   .howwework__stepNumber::after {
-    content: '';
-    position: absolute;
-    inset: -4px;
-    border: 2px solid rgba(255, 52, 47, 0.2);
-    border-radius: 50%;
+    display: none;
   }
 
   .howwework__stepIcon {
-    margin: 0 auto 12px;
+    display: none;
   }
 
   .howwework__stepContent {
-    max-width: 320px;
-    margin: 0 auto;
-    padding-top: 0;
+    max-width: none;
+    margin: 0;
+    padding-top: 4px;
   }
 
   .howwework__stepTitle {
@@ -3619,10 +3619,11 @@ ul {
   }
 
   .howwework__steps::before {
-    left: 50%;
+    left: 18px;
   }
 
   .howwework__step {
+    gap: 12px;
     padding: 0;
   }
 
@@ -3631,7 +3632,7 @@ ul {
     height: 38px;
     min-width: 38px;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .howwework__stepTitle {
