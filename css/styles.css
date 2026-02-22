@@ -3136,17 +3136,54 @@ ul {
   }
 
   .howwework__steps {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
   }
 
   .howwework__steps::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    bottom: 24px;
+    left: 21px;
+    width: 2px;
+    background: linear-gradient(180deg, #ff342f 0%, #ff6b68 100%);
+    z-index: 0;
+  }
+
+  .howwework__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    text-align: left;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .howwework__stepNumber {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    margin: 0;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(255, 52, 47, 0.25);
+  }
+
+  .howwework__stepNumber::after {
     display: none;
   }
 
-  .howwework__step:nth-child(3),
-  .howwework__step:nth-child(4) {
-    justify-self: center;
+  .howwework__stepIcon {
+    display: none;
+  }
+
+  .howwework__stepContent {
+    max-width: none;
+    margin: 0;
+    padding-top: 4px;
   }
 
   .contactform__wrapper {
