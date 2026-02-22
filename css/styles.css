@@ -3299,29 +3299,27 @@ ul {
   }
 
   .howwework__steps {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
     position: relative;
   }
 
   .howwework__steps::before {
     content: '';
     position: absolute;
-    top: 24px;
-    bottom: 24px;
-    left: 23px;
+    top: 22px;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 2px;
     background: linear-gradient(180deg, #ff342f 0%, #ff6b68 100%);
     z-index: 0;
   }
 
   .howwework__step {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
-    padding: 12px 0;
+    text-align: center;
+    padding: 0;
   }
 
   .howwework__stepNumber {
@@ -3329,7 +3327,7 @@ ul {
     height: 44px;
     min-width: 44px;
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto 12px;
     flex-shrink: 0;
     position: relative;
     z-index: 2;
@@ -3337,16 +3335,21 @@ ul {
   }
 
   .howwework__stepNumber::after {
-    display: none;
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 2px solid rgba(255, 52, 47, 0.2);
+    border-radius: 50%;
   }
 
   .howwework__stepIcon {
-    display: none;
+    margin: 0 auto 12px;
   }
 
   .howwework__stepContent {
-    flex: 1;
-    padding-top: 4px;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 0;
   }
 
   .howwework__stepTitle {
@@ -3616,12 +3619,11 @@ ul {
   }
 
   .howwework__steps::before {
-    left: 19px;
+    left: 50%;
   }
 
   .howwework__step {
-    gap: 20px;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .howwework__stepNumber {
@@ -3629,6 +3631,7 @@ ul {
     height: 38px;
     min-width: 38px;
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .howwework__stepTitle {
@@ -5014,6 +5017,23 @@ ul {
   background: #ffffff;
 }
 
+.contact-card--link {
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-card--link:hover {
+  border-color: rgba(0, 163, 213, 0.35);
+  box-shadow: 0 8px 20px rgba(15, 62, 98, 0.08);
+  transform: translateY(-1px);
+}
+
+.contact-card--link:focus-visible {
+  outline: 3px solid rgba(0, 163, 213, 0.35);
+  outline-offset: 2px;
+}
+
 .contact-card__icon {
   width: 48px;
   height: 48px;
@@ -5052,11 +5072,6 @@ ul {
   font-weight: 500;
   color: #353b46;
   margin-bottom: 2px;
-}
-
-.contact-card__main a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .contact-card__hint {
