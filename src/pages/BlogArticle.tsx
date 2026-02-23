@@ -91,7 +91,7 @@ const BlogArticlePage = () => {
               ]} 
             />
             <div style={{ textAlign: 'center', padding: '80px 20px' }}>
-              <h1 style={{ fontSize: '32px', color: '#00407e', marginBottom: '16px' }}>
+              <h1 className="section-title" style={{ color: '#00407e', marginBottom: '16px' }}>
                 Статья не найдена
               </h1>
               <p style={{ color: '#718096', marginBottom: '32px' }}>
