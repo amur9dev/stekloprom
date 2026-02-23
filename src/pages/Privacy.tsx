@@ -138,13 +138,10 @@ const PrivacyPage = () => {
 
           {/* Заголовок */}
           <header style={{ marginBottom: '48px' }}>
-            <h1 style={{ 
+            <h1 className="section-title" style={{ 
               fontFamily: 'Inter, sans-serif',
-              fontSize: '40px',
-              fontWeight: 700,
               color: '#00407e',
               margin: '0 0 16px 0',
-              lineHeight: 1.2,
             }}>
               {PRIVACY_CONTENT.title}
             </h1>
@@ -160,10 +157,8 @@ const PrivacyPage = () => {
           {/* Секции */}
           {PRIVACY_CONTENT.sections.map((section, index) => (
             <section key={index} style={{ marginBottom: '40px' }}>
-              <h2 style={{
+              <h2 className="block-title" style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '24px',
-                fontWeight: 600,
                 color: '#00407e',
                 margin: '0 0 20px 0',
               }}>

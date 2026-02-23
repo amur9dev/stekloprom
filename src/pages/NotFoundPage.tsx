@@ -57,10 +57,8 @@ const NotFoundPage = () => {
         </div>
 
         {/* Заголовок */}
-        <h1 style={{
+        <h1 className="section-title" style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: '32px',
-          fontWeight: 700,
           color: '#2D3748',
           margin: '0 0 16px 0',
         }}>
@@ -144,10 +142,8 @@ const NotFoundPage = () => {
             marginBottom: '24px',
           }}>
             <Search size={24} color="#003366" />
-            <h2 style={{
+            <h2 className="block-title" style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '20px',
-              fontWeight: 600,
               color: '#2D3748',
               margin: 0,
             }}>
